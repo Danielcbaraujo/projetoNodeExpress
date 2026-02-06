@@ -1,0 +1,29 @@
+### Criar produto
+POST http://localhost:3000/cadastro
+Content-Type: application/json
+
+{
+  "nome": "Mouse Gamer",
+  "preco": 120.50,
+  "descricao": "Mouse RGB"
+}
+
+###
+
+### Listar produtos
+GET http://localhost:3000/produtos
+
+###
+
+### Atualizar produto
+PATCH http://localhost:3000/atualizar/1
+Content-Type: application/json
+
+{
+  "preco": 150
+}
+
+###
+
+### Deletar produto
+DELETE http://localhost:3000/deletar/1
